@@ -1,0 +1,271 @@
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+}
+
+#poste{
+    background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/fond.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_cont1-1{
+    color: gold;
+    font-size: 3rem;
+    font-weight: 900;
+    border-bottom: 1px solid white;
+}
+
+.home_cont1-2{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+#example{
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 50px;
+}
+
+.home2_title{
+    font-size: 2.5rem;
+    font-weight: 900;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    color: gold;
+}
+
+.home2_container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home2_cont{
+    border: 3px outset white;
+    height: 350px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    background-color: white;
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+.home2_cont:hover{
+    transform: scale(1.2);
+   
+}
+
+.home2_cont1{
+   width: 80%;
+}
+
+.home2_cont2{
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-top: 2px solid black;
+    width: 100%;
+}
+
+#perso{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fffaf0;
+}
+
+
+.home3_cont_text{
+    width: auto;
+    height: auto;
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    color: red;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.home3_cont_img{
+    border: 3px outset black;
+    width: 28%;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+backface-visibility: hidden;
+
+}
+.home3_cont_img:hover{
+    transform: rotate3d(1, 1, 0, 45deg) scale(1.2);
+    cursor: grab;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+backface-visibility: hidden;
+
+}
+
+#products{
+    background-color: #faebd7;
+     background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/fond1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.home4_cont{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: gold;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.home4_cont_ico{
+    font-size: 3rem;
+    color: white;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.home4_cont_ico:hover{
+    transform: scale(1.2);
+    color: gold;
+}
+
+@media (max-width:700px) {
+    .home_cont1-1{
+        font-size: 2rem;
+    }
+
+    .home_cont1-2{
+        font-size: 1.2rem;
+    }
+
+    .home2_container{
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .home2_cont{
+        width: 45%;
+        height: 250px;
+        margin: 10px auto;
+    }
+
+    
+.home2_cont:hover{
+    transform: scale(1);
+    position: relative;
+    z-index: 1;
+    margin: auto;
+}
+
+#perso{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home3_cont_text{
+    font-size: 1.5rem;
+    text-align: center;
+    gap: 30px;
+}
+
+.home3_cont_img{
+    width: 80%;
+    border-radius: 50px;
+}
+
+.home4_cont{
+    font-size: 1.5rem;
+}
+
+}
+
+
+@media (min-width:700px) and (max-width: 1000px) {
+    .home_cont1-1{
+        font-size: 2rem;
+    }
+
+    .home_cont1-2{
+        font-size: 1.2rem;
+    }
+
+    .home2_container{
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        gap: 50px;
+    }
+
+    .home2_cont{
+        width: 45%;
+        height: 350px;
+        margin: 10px auto;
+
+    }
+
+    
+.home2_cont:hover{
+    transform: scale(1);
+    position: relative;
+    z-index: 1;
+    margin: auto;
+}
+
+.home2_cont1{
+    width: 50%;
+}
+
+
+#perso{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home3_cont_text{
+    font-size: 2rem;
+    text-align: center;
+    gap: 30px;
+}
+
+.home3_cont_img{
+    width: 60%;
+    border-radius: 50px;
+}
+
+}
