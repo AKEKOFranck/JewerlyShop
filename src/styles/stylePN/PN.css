@@ -8,58 +8,116 @@ main{
 }
 
 .pn_header{
-    height: 200px;
+    height: 150px;
+    border-bottom: 2px solid white;
 }
 
 .pn_cont{
-    border-bottom: 2px solid red;
     width: 100%;
-    height: 40vh;
+    height: auto;
     display: flex;
     align-items: center;
     gap: 25px;
     justify-content: center;
 }
 
+.pn_box{
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
 
 .pn_card{
-    width: 230px;
-    height: 400px;
-    background-color: white;
-    border: 2px outset whitesmoke;
+    width: 250px;
+    height: auto;
+    background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.pn_card_img{
-    width: 80%;
     align-items: center;
-    margin: auto;
-    object-fit: contain;
+    justify-content: center;
+    border: 2px outset black;
 }
 
-.pn_card_text{
+.pn_items{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    width: 100%;
     font-size: 1rem;
-    font-weight: 300;
+    color: white;
 }
 
-.pn_card_qt{
+.pn_img{
+   width: 100%;
+   max-width: 250px;
+   height: 250px;
+   object-fit: contain;
+    transition: all 0.3s ease-in-out;
+}
+
+.pn_img:hover{
+    transform: scale(2.1);
+    transition: 0.3s;
+
+}
+
+.pn_qt{
     color: red;
     font-weight: 600;
 }
 
-.pn_card_btn{
-     width: 100%;
-    padding: 10px;
-    border: none;
-    background: #222;
+.pn_bt{
+    width: 100%;
+    height: 40px;
+    background-color: red;
     color: white;
-    border-radius: 8px;
+    font-weight: 600;
+    border: none;
     cursor: pointer;
+}
+.pn_bt:hover{
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
+
+
+
+@media (max-width:700px) {
+    .pn_cont{
+        flex-direction: column;
+        width: 100%;
+    }
+    .pn_box{
+        width: 100%;
+    }
+    
+.pn_img:hover{
+    transform: scale(1.7);
+    transition: 0.3s;
+}
+}
+
+
+@media (min-width:700px) and (max-width: 1000px) {
+    .pn_cont{
+        flex-direction: column;
+        width: 100%;
+    }
+    .pn_box{
+        width: 100%;
+    }
+    
+.pn_img:hover{
+    transform: scale(1.7);
     transition: 0.3s;
 }
 
-.pn_card_btn:hover{
- background: #e63946;
 }
