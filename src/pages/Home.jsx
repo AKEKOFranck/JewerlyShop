@@ -25,6 +25,8 @@ import { CiShop } from "react-icons/ci";
                 </div>
             </section>
 
+
+
             <section className="home" id='example'>
                 <div className='home2_title'>Nos catégories</div>
                 <div className='home2_container'>
@@ -36,6 +38,9 @@ import { CiShop } from "react-icons/ci";
                     ))}
                 </div>
             </section>
+
+
+            
 
             <section className="home" id='perso'>
                 <div className='home3_cont_text'>
