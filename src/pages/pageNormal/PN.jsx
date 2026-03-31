@@ -5,21 +5,21 @@ import pic2 from '../../assets/Eboucles.png';
 export default function PN() {
 
     const sendToWhatsApp = (product) => {
-    const numero = "2250700000000"; // ton numéro
+    const numero = "2250789763083"; // ton numéro
 
     const message = `
-🛍️ *Commande produit*
+ *Commande produit*
 
-📌 Produit : ${product.name}
-💰 Prix : ${product.prix}
-📏 Taille : ${product.taille}
-🔖 Type : ${product.type}
+ Produit : ${product.name}
+ Prix : ${product.prix}
+ Taille : ${product.taille}
+ Type : ${product.type}
 
-✍️ *Veuillez compléter :*
-👤 Nom :
-📞 Numéro :
-📍 Localisation :
-🔢 Quantité :
+ *Veuillez compléter :*
+ Nom :
+ Numéro :
+ Localisation :
+ Quantité :
 
 Merci 🙏
     `;
