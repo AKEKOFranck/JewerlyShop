@@ -93,7 +93,7 @@ const [dispo, setDispo] = useState(true);
             <p className='pn_prix'>{data.prix}</p>
             <p className='pn_taille'>{data.taille}</p>
             <p className='pn_type'>{data.type}</p>
-            <p className='pn_qt'>{data.disponibility}</p>
+            <p className='pn_qt'>{data.disponibility ? "Disponible" : "Indisponible"}</p>
             <button className='pn_bt' onClick={() => sendToWhatsApp(data)}>
                 commander
             </button>
@@ -116,7 +116,7 @@ const [dispo, setDispo] = useState(true);
             <p className='pn_prix'>{data.prix}</p>
             <p className='pn_taille'>{data.taille}</p>
             <p className='pn_type'>{data.type}</p>
-            <p className='pn_qt'>{data.disponibility}</p>
+            <p className='pn_qt'>{data.disponibility ? "Disponible" : "Indisponible"}</p>
             <button className='pn_bt' onClick={() => sendToWhatsApp(data)}>
                 commander
             </button>
@@ -135,7 +135,7 @@ const [dispo, setDispo] = useState(true);
             <p className='pn_prix'>{data.prix}</p>
             <p className='pn_taille'>{data.taille}</p>
             <p className='pn_type'>{data.type}</p>
-            <p className='pn_qt'>{data.disponibility}</p>
+            <p className='pn_qt'>{data.disponibility ? "Disponible" : "Indisponible"}</p>
             <button className='pn_bt' onClick={() => sendToWhatsApp(data)}>
                 commander
             </button>
@@ -158,7 +158,7 @@ const [dispo, setDispo] = useState(true);
             <p className='pn_prix'>{data.prix}</p>
             <p className='pn_taille'>{data.taille}</p>
             <p className='pn_type'>{data.type}</p>
-            <p className='pn_qt'>{data.disponibility}</p>
+            <p className='pn_qt'>{data.disponibility ? "Disponible" : "Indisponible"}</p>
             <button className='pn_bt' onClick={() => sendToWhatsApp(data)}>
                 commander
             </button>
@@ -177,7 +177,7 @@ const [dispo, setDispo] = useState(true);
             <p className='pn_prix'>{data.prix}</p>
             <p className='pn_taille'>{data.taille}</p>
             <p className='pn_type'>{data.type}</p>
-            <p className='pn_qt'>{data.disponibility}</p>
+            <p className='pn_qt'>{data.disponibility ? "Disponible" : "Indisponible"}</p>
             <button className='pn_bt' onClick={() => sendToWhatsApp(data)}>
                 commander
             </button>
