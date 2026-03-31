@@ -5,7 +5,7 @@ import pic2 from '../../assets/Eboucles.png';
 export default function PN() {
 
     const sendToWhatsApp = (product) => {
-    const numero = "2250789763083"; // ton numéro
+    const numero = ""; // ton numéro
 
     const message = `
  *Commande produit*
